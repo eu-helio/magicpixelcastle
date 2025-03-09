@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.mae{
+    
+    background-image:url("img/background.png");
+    background-color: #3b795d;
+}
+
+.telalogin{
+    cursor: url("img/cursor.svg"), auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;   /* Largura */
+    height: 300px;  /* Altura */
+    background-color: #F5D59B;
+    border-radius: 5px;
+    border: 2px solid #BBCDC5;
+    box-shadow: 10px 10px 15px #474540;
+    
+}
+
+
+
+.login{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#iniciojornada{
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    cursor: url("img/cursor.svg"), auto;
+    border-radius: 20px;
+    background-color: #DDB287;
+    transform: translate(-50%, -50%);
+}
+.nomeplayer{
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 500x;
+    width: 100px;
+    transform: translate(-50%, -50%);
+}
+#idadeuser{
+    text-align: center;
+    position: fixed;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+
+
+.game-board{
+    width: 80%;
+    height: 700px;
+    border: 3px solid #474540;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    background-color: aliceblue;
+    overflow: hidden;
+    background-image: url(/site/assets/css/img/grama.gif);
+    background-repeat: repeat-x;
+    background-position-y: 100%;
+    background-size: 200px;
+}
+.guerreiro{
+    position: absolute;
+    width: 200px;
+    bottom: 6%;
+    display: none;
+    
+}
+.ataque {
+
+    position: absolute;
+    width: 150px;
+    bottom: 6%;
+    left: 15px;
+    display: none;
+   
+
+}
+.inimigo {
+    position: absolute;
+    width: 110px;
+    bottom: 6%;
+    left:10%;
+    /*left: 80%;*/
+    display: none;
+    
+    animation: movimento-nuvens 10s infinite linear ;
+}
+.inimigomorto{
+    position: absolute;
+    width: 110px;
+    bottom: 6%;
+    left: 120px;
+    display: none;
+    display: none;
+}
+.grama {
+    position: absolute;
+    bottom: -1%;
+    left: -5px;
+    height: 50px;
+
+
+}
+.nuvens{
+    position: absolute;
+    animation: movimento-nuvens 25s infinite linear ;
+    
+    height: 250px;
+}
+
+
+
+.restart{
+    
+    padding: 10px;
+    box-shadow: 20px;
+    position: absolute;
+    top: 350px;
+    left: 48%;
+    display: none;
+}
+.start{
+    
+    padding: 10px;
+    box-shadow: 20px;
+    position: absolute;
+    top: 400px;
+    left: 48%;
+
+}
+
+.pontos{
+    position: relative  ;
+    top: 350px;
+    left: 45%;
+    display: none;
+    
+}
+
+
+.gameover {
+    position: relative;
+    display: none;
+    top: 280px;
+    left: 40%;
+    animation: blink-animation 1s steps(5, start) infinite;
+    color: red; /* Cor inicial do texto */
+    font-weight: bold; /* Opcional: deixa o texto em negrito */
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes movimento-nuvens{
+    from{
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
+@keyframes movimento-inimigo{
+    from{
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+
+
+
+
+.guerreiroparado{
+    position: absolute;
+    
+    width: 200px;
+    bottom: 6%;
+    left: 400px;
+    display: none;
+
+}
